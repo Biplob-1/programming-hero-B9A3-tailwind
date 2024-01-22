@@ -10,7 +10,7 @@
     <!-- Google fonts Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Custome Tailwind CSS -->
     <script>
         tailwind.config = {
@@ -18,6 +18,15 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'custom-dark': '#131318',
+                'custom-red': '#FF4240',
+                'custom-purple': '#424247',
+                'white-60': 'rgba(255, 255, 255, 0.6)',
+                'custom-opacity-60': 'rgba(19, 19, 24, 0.6)',
+                'custom-opacity-50': 'rgba(19, 19, 24, 0.5)',
+                'custom-opacity-40': 'rgba(19, 19, 24, 0.4)',
+                'custom-opacity-30': 'rgba(19, 19, 24, 0.3)',
+                
               }
             }
           }
@@ -28,8 +37,77 @@
 </head>
 <body>
     <!-- header section -->
-    <header>
-
+    <header class="lg:container lg:mx-auto">
+        <!-- navbar -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-2xl font-extrabold">Hockey<span class="text-custom-red">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                      </button>
+                  <a class="btn">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+        <!-- Carousel / Slider -->
+        <div class="carousel w-full lg:h-[500px]">
+            <!-- slider one -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class=" flex flex-col lg:flex-row">
+                    <div>
+                        <img src="images/1.png" class="w-full" />
+                    </div>
+                    <div>
+                        <h3>Hello</h3>
+                    </div>
+                </div>
+              
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slider two -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class=" flex flex-col lg:flex-row">
+                    <div>
+                        <img src="images/1.png" class="w-full" />
+                    </div>
+                    <div>
+                        <h3>Hello</h3>
+                    </div>
+                </div>
+              
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+          </div>
     </header>
     <!-- main section -->
     <main>
