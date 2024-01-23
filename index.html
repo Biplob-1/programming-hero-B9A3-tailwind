@@ -51,9 +51,13 @@
       };
     </script>
     <!-- Custome CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .card.image-full:before {
+        opacity: 0.5;
+      }
+    </style>
   </head>
-  <body>
+  <body style="font-family: 'Manrope', sans-serif; border: 1px solid red">
     <!-- header section -->
     <header class="lg:container lg:mx-auto">
       <!-- navbar -->
@@ -147,12 +151,97 @@
     <!-- main section -->
     <main class="lg:container lg:mx-auto">
       <!-- Progress section -->
-      <section class="py-24">
+      <section class="my-24">
         <div
           class="text-center flex flex-col justify-center items-center border-y border-opacity-30 border-dashed"
         >
           <h3 class="text-4xl font-extrabold text-custom-dark pt-10 pb-6">
             Professional Hockeys Club
+          </h3>
+          <p class="opacity-60 font-medium w-6/12 pb-10">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin...
+          </p>
+        </div>
+        <div class="section-body mt-10 grid grid-cols-4 gap-10 text-center">
+          <!-- proggres bar one start -->
+          <div>
+            <div
+              class="radial-progress text-red-500"
+              style="--value: 87"
+              role="progressbar"
+            >
+              87%
+            </div>
+            <div>
+              <h3>Prayer Facility</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem illum.
+              </p>
+            </div>
+          </div>
+          <!-- proggres bar two start -->
+          <div>
+            <div
+              class="radial-progress text-emerald-400"
+              style="--value: 95"
+              role="progressbar"
+            >
+              95%
+            </div>
+            <div>
+              <h3>Prayer Facility</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem illum.
+              </p>
+            </div>
+          </div>
+          <!-- proggres bar three start -->
+          <div>
+            <div
+              class="radial-progress text-amber-300"
+              style="--value: 90"
+              role="progressbar"
+            >
+              90%
+            </div>
+            <div>
+              <h3>Prayer Facility</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem illum.
+              </p>
+            </div>
+          </div>
+          <!-- proggrs bar four start-->
+          <div>
+            <div
+              class="radial-progress text-blue-500"
+              style="--value: 80"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <div>
+              <h3>Prayer Facility</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem illum.
+              </p>
+            </div>
+          </div>
+          <!-- proggrs bar for end -->
+        </div>
+      </section>
+      <!-- Program section -->
+      <section class="my-24">
+        <div
+          class="text-center flex flex-col justify-center items-center border-y border-opacity-30 border-dashed"
+        >
+          <h3 class="text-4xl font-extrabold text-custom-dark pt-10 pb-6">
+            Program Sections
           </h3>
           <p class="opacity-60 font-medium w-6/12 pb-10">
             Dit amet consectetur. Condimentum dignissim adipiscing aliquam
@@ -238,14 +327,14 @@
           </div>
         </div>
       </section>
-
-      <!-- Program section -->
+      <!-- products section -->
+      <!-- Contact section -->
       <section class="">
         <div
           class="text-center flex flex-col justify-center items-center border-y border-opacity-30 border-dashed"
         >
           <h3 class="text-4xl font-extrabold text-custom-dark pt-10 pb-6">
-            Program Sections
+            Our New Products
           </h3>
           <p class="opacity-60 font-medium w-6/12 pb-10">
             Dit amet consectetur. Condimentum dignissim adipiscing aliquam
@@ -254,14 +343,13 @@
         </div>
         <div class="section-body"></div>
       </section>
-
       <!-- Faq section -->
-      <section class="py-24">
+      <section class="my-24">
         <div
           class="text-center flex flex-col justify-center items-center border-y border-opacity-30 border-dashed"
         >
           <h3 class="text-4xl font-extrabold text-custom-dark pt-10 pb-6">
-            Our New Products
+            Clients Question
           </h3>
           <p class="opacity-60 font-medium w-6/12 pb-10">
             Dit amet consectetur. Condimentum dignissim adipiscing aliquam
@@ -380,7 +468,7 @@
           class="text-center flex flex-col justify-center items-center border-y border-opacity-30 border-dashed"
         >
           <h3 class="text-4xl font-extrabold text-custom-dark pt-10 pb-6">
-            Clients Question
+            Contact
           </h3>
           <p class="opacity-60 font-medium w-6/12 pb-10">
             Dit amet consectetur. Condimentum dignissim adipiscing aliquam
