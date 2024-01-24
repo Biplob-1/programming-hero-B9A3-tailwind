@@ -32,17 +32,20 @@
             colors: {
               clifford: "#da373d",
               "custom-dark": "#131318",
-              "custom-red": "#FF4240",
               "custom-purple": "#424247",
               "white-60": "rgba(255, 255, 255, 0.6)",
-              "opacity-60": "rgba(19, 19, 24, 0.6)",
-              "opacity-50": "rgba(19, 19, 24, 0.5)",
-              "opacity-40": "rgba(19, 19, 24, 0.4)",
-              "opacity-30": "rgba(19, 19, 24, 0.3)",
-              "opacity-10": "rgba(19, 19, 24, 0.1)",
+              "custom-dark-opacity-60": "rgba(19, 19, 24, 0.6)",
+              "custom-dark-opacity-50": "rgba(19, 19, 24, 0.5)",
+              "custom-dark-opacity-40": "rgba(19, 19, 24, 0.4)",
+              "custom-dark-opacity-30": "rgba(19, 19, 24, 0.3)",
+              "custom-dark-opacity-10": "rgba(19, 19, 24, 0.1)",
             },
             backgroundColor: {
               "custome-backColor": "#131318",
+              "lime-opacity-10": "rgba(217, 249, 157, 0.1)",
+              "amber-opacity-10": "rgba(252, 211, 77, 0.1)",
+              "blue-400-opacity-10": "rgba(96, 165, 250, 0.1)",
+              "custom-textarea-03": "rgba(19, 19, 24, 0.03)",
             },
           },
         },
@@ -94,33 +97,23 @@
               >Hockey<span class="text-custom-red">’</span>s</a
             >
           </div>
-          <div class="navbar-center hidden lg:flex">
+          <div class="navbar-center hidden lg:flex gap-11">
             <ul class="menu menu-horizontal px-1">
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Pages</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Contact</a></li>
+              <li><a class="text-red-500 font-bold">Home</a></li>
+              <li><a class="text-zinc-700">About</a></li>
+              <li><a class="text-zinc-700">Pages</a></li>
+              <li><a class="text-zinc-700">Blog</a></li>
+              <li><a class="text-zinc-700">Contact</a></li>
             </ul>
           </div>
           <div class="navbar-end">
-            <button class="btn btn-ghost btn-circle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
+            <button class="btn btn-ghost btn-circle hidden md:inline-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </button>
-            <a class="btn">Get Ticket</a>
+            
+            <a class="btn text-white text-xl font-bold  bg-red-500 rounded-lg">Get Ticket</a> 
           </div>
         </div>
       </nav>
@@ -147,21 +140,20 @@
       </div>
     </header>
     <!-- main section -->
-    <main class="lg:container lg:mx-auto">
+    <main class="container mx-auto">
       <!-- Progress section -->
       <section class="my-24">
         <div
-          class="text-center flex flex-col justify-center items-center border-y border-opacity-30 border-dashed"
+          class="text-center flex flex-col justify-center items-center border-y border-custom-dark-opacity-30 border-dashed"
         >
-          <h3 class="text-4xl font-extrabold text-custom-dark pt-10 pb-6">
+          <h3 class="text-2xl lg:text-4xl font-extrabold text-custom-dark pt-10 pb-6">
             Professional Hockeys Club
           </h3>
-          <p class="opacity-60 font-medium w-6/12 pb-10">
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin...
+          <p class="custom-dark-opacity-60 font-medium w-10/12 lg:w-6/12 pb-10">
+            Elite player training, state-of-the-art facilities, nurturing champions for hockey excellence. 
           </p>
         </div>
-        <div class="section-body mt-10 grid grid-cols-4 gap-10 text-center">
+        <div class="section-body mt-10 grid grid-cols-1 lg:grid-cols-4 gap-10 text-center">
           <!-- proggres bar one start -->
           <div>
             <div
@@ -172,10 +164,9 @@
               87%
             </div>
             <div>
-              <h3>Prayer Facility</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem illum.
+              <h3 class="text-custom-dark text-xl font-semibold my-3">Prayer Facility</h3>
+              <p class="text-custom-dark-opacity-60">
+                Hockey club with dedicated prayer facility for spiritual well-being.
               </p>
             </div>
           </div>
@@ -189,10 +180,9 @@
               95%
             </div>
             <div>
-              <h3>Prayer Facility</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem illum.
+              <h3 class="text-custom-dark text-xl font-semibold my-3">Experienced Coach</h3>
+              <p class="text-custom-dark-opacity-60">
+                Experienced coach cultivating talent, honing skills, and achieving athletic excellence
               </p>
             </div>
           </div>
@@ -206,10 +196,9 @@
               90%
             </div>
             <div>
-              <h3>Prayer Facility</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem illum.
+              <h3 class="text-custom-dark text-xl font-semibold my-3">Senior player</h3>
+              <p class="text-custom-dark-opacity-60">
+                Senior player with seasoned expertise and exemplary leadership on the field.
               </p>
             </div>
           </div>
@@ -223,10 +212,9 @@
               80%
             </div>
             <div>
-              <h3>Prayer Facility</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem illum.
+              <h3 class="text-custom-dark text-xl font-semibold my-3">Training Ground</h3>
+              <p class="text-custom-dark-opacity-60">
+                State-of-the-art training ground fostering growth, skill development, and teamwork.
               </p>
             </div>
           </div>
@@ -236,18 +224,17 @@
       <!-- Program section -->
       <section class="my-24">
         <div
-          class="text-center flex flex-col justify-center items-center border-y border-opacity-30 border-dashed"
+          class="text-center flex flex-col justify-center items-center border-y border-custom-dark-opacity-30 border-dashed"
         >
-          <h3 class="text-4xl font-extrabold text-custom-dark pt-10 pb-6">
+          <h3 class="text-2xl lg:text-4xl font-extrabold text-custom-dark pt-10 pb-6">
             Program Sections
           </h3>
-          <p class="opacity-60 font-medium w-6/12 pb-10">
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin...
+          <p class="custom-dark-opacity-60 font-medium w-10/12 lg:w-6/12 pb-10">
+            Our program section offers a comprehensive range of activities, including elite training, skill development, and community engagement, ensuring a well-rounded and fulfilling experience for all participants.
           </p>
         </div>
 
-        <div class="section-body mt-10 grid grid-cols-2 gap-5">
+        <div class="section-body mt-10 grid grid-cols-1 lg:grid-cols-2 gap-5">
           <!-- card one -->
           <div class="card image-full">
             <figure>
@@ -259,7 +246,7 @@
             </figure>
             <div class="card-body">
               <h2
-                class="card-title text-white text-[28px] font-extrabold pt-[95px]"
+                class="card-title text-white lg:text-[28px] font-extrabold pt-3 lg:pt-[95px]"
               >
                 Junior Program
               </h2>
@@ -269,7 +256,7 @@
                 amet nunc morbi nulla. Tortor congue sed et in.
               </p>
               <div class="card-actions">
-                <button class="btn">Register Now!</button>
+                <button class=" text-white text-lg font-bold bg-red-500 rounded-lg px-4 py-2" type="button">Register Now!</button>
               </div>
             </div>
           </div>
@@ -284,7 +271,7 @@
             </figure>
             <div class="card-body">
               <h2
-                class="card-title text-white text-[28px] font-extrabold pt-[95px]"
+                class="card-title text-white lg:text-[28px] font-extrabold pt-3 lg:pt-[95px]"
               >
                 Teenager Program
               </h2>
@@ -294,12 +281,12 @@
                 amet nunc morbi nulla. Tortor congue sed et in.
               </p>
               <div class="card-actions">
-                <button class="btn">Register Now!</button>
+                <button class=" text-white text-lg font-bold bg-red-500 rounded-lg px-4 py-2" type="button">Register Now!</button>
               </div>
             </div>
           </div>
           <!-- card three -->
-          <div class="card image-full col-span-2">
+          <div class="card image-full lg:col-span-2">
             <figure>
               <img
                 src="images/4.png"
@@ -309,17 +296,17 @@
             </figure>
             <div class="card-body">
               <h2
-                class="card-title pt-[200px] mb-4 text-white text-[28px] font-extrabold"
+                class="card-title lg:pt-[200px] mb-4 text-white text-[28px] font-extrabold"
               >
                 Professional Program
               </h2>
-              <p class="text-white font-medium w-6/12">
+              <p class="text-white font-medium lg:w-6/12">
                 Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
                 elit enim sagittis turpis in magna. Id et sed euismod natoque
                 amet nunc morbi nulla. Tortor congue sed et in.
               </p>
               <div class="card-actions">
-                <button class="btn">Register Now!</button>
+                <button class=" text-white text-lg font-bold bg-red-500 rounded-lg px-4 py-2" type="button">Register Now!</button>
               </div>
             </div>
           </div>
@@ -328,23 +315,22 @@
       <!-- products section -->
       <section class="">
         <div
-          class="text-center flex flex-col justify-center items-center border-y border-opacity-30 border-dashed"
+          class="text-center flex flex-col justify-center items-center border-y border-custom-dark-opacity-30 border-dashed"
         >
-          <h3 class="text-4xl font-extrabold text-custom-dark pt-10 pb-6">
+          <h3 class="text-2xl lg:text-4xl font-extrabold text-custom-dark pt-10 pb-6">
             Our New Products
           </h3>
-          <p class="opacity-60 font-medium w-6/12 pb-10">
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin...
+          <p class="custom-dark-opacity-60 font-medium w-10/12 lg:w-6/12 pb-10">
+            Discover our latest products, a fusion of innovation and quality. From cutting-edge technology to stylish designs, we bring you unparalleled options that redefine your lifestyle and elevate your experience.
           </p>
         </div>
-        <div class="section-body grid grid-cols-2 mt-10 gap-6">
+        <div class="section-body grid grid-cols-1 lg:grid-cols-2 mt-10 gap-6">
           <!-- product one -->
           <div
-            class="hero-content flex flex-row border border-opacity-10 rounded-2xl"
+            class="hero-content flex flex-col lg:flex-row  border border-custom-dark-opacity-10 rounded-2xl"
           >
             <img src="images/5.png" />
-            <div>
+            <div class="">
               <div class="social-icons">
                 <i class="fas fa-star"> 5.0</i>
                 <i class="fas fa-heart"> 20</i>
@@ -362,9 +348,9 @@
           </div>
           <!-- product two -->
           <div
-            class="hero-content flex flex-row border border-opacity-10 rounded-2xl"
+            class="hero-content flex flex-col lg:flex-row border border-custom-dark-opacity-10 rounded-2xl"
           >
-            <img src="images/5.png" />
+            <img src="images/6.png" />
             <div>
               <div class="social-icons">
                 <i class="fas fa-star"> 5.0</i>
@@ -383,9 +369,9 @@
           </div>
           <!-- product three -->
           <div
-            class="hero-content flex flex-row border border-opacity-10 rounded-2xl"
+            class="hero-content flex flex-col lg:flex-row border border-custom-dark-opacity-10 rounded-2xl"
           >
-            <img src="images/5.png" />
+            <img src="images/7.png" />
             <div>
               <div class="social-icons">
                 <i class="fas fa-star"> 5.0</i>
@@ -404,9 +390,9 @@
           </div>
           <!-- product four -->
           <div
-            class="hero-content flex flex-row border border-opacity-10 rounded-2xl"
+            class="hero-content flex flex-col lg:flex-row border border-custom-dark-opacity-10 rounded-2xl"
           >
-            <img src="images/5.png" />
+            <img src="images/8.png" />
             <div>
               <div class="social-icons">
                 <i class="fas fa-star"> 5.0</i>
@@ -425,9 +411,9 @@
           </div>
           <!-- product five -->
           <div
-            class="hero-content flex flex-row border border-opacity-10 rounded-2xl"
+            class="hero-content flex flex-col lg:flex-row border border-custom-dark-opacity-10 rounded-2xl"
           >
-            <img src="images/5.png" />
+            <img src="images/9.png" />
             <div>
               <div class="social-icons">
                 <i class="fas fa-star"> 5.0</i>
@@ -446,9 +432,9 @@
           </div>
           <!-- product six -->
           <div
-            class="hero-content flex flex-row border border-opacity-10 rounded-2xl"
+            class="hero-content flex flex-col lg:flex-row border border-custom-dark-opacity-10 rounded-2xl"
           >
-            <img src="images/5.png" />
+            <img src="images/10.png" />
             <div>
               <div class="social-icons">
                 <i class="fas fa-star"> 5.0</i>
@@ -472,15 +458,15 @@
         <div
           class="text-center flex flex-col justify-center items-center border-y border-opacity-30 border-dashed"
         >
-          <h3 class="text-4xl font-extrabold text-custom-dark pt-10 pb-6">
+          <h3 class="text-2xl lg:text-4xl font-extrabold text-custom-dark pt-10 pb-6">
             Clients Question
           </h3>
-          <p class="opacity-60 font-medium w-6/12 pb-10">
+          <p class="custom-dark-opacity-60 font-medium w-10/12 lg:w-6/12 pb-10">
             Dit amet consectetur. Condimentum dignissim adipiscing aliquam
             turpis placerat dolor. Purus urna in sit nullam proin...
           </p>
         </div>
-        <div class="section-body mt-10 grid grid-cols-2">
+        <div class="section-body mt-10 grid grid-cols-1 lg:grid-cols-2">
           <div class="section-image">
             <img src="images/11.png" alt="" />
           </div>
@@ -587,22 +573,150 @@
       </section>
 
       <!-- Contact section -->
-      <section class="">
+      <section>
         <div
-          class="text-center flex flex-col justify-center items-center border-y border-opacity-30 border-dashed"
+          class="text-center flex flex-col justify-center items-center border-y border-custom-dark-opacity-30 border-dashed"
         >
-          <h3 class="text-4xl font-extrabold text-custom-dark pt-10 pb-6">
+          <h3 class="text-2xl lg:text-4xl font-extrabold text-custom-dark pt-10 pb-6">
             Contact
           </h3>
-          <p class="opacity-60 font-medium w-6/12 pb-10">
+          <p class="custom-dark-opacity-60 font-medium w-10/12 lg:w-6/12 pb-10">
             Dit amet consectetur. Condimentum dignissim adipiscing aliquam
             turpis placerat dolor. Purus urna in sit nullam proin...
           </p>
         </div>
-        <div class="section-body">
-          <div class="info-section"></div>
-          <div class="form-section"></div>
+        <div class="section-body mt-10 grid grid-cols-1 lg:grid-cols-3 lg:gap-10">
+          <div
+            class="info-card-section rounded-2xl border border-custom-dark border-opacity-10"
+          >
+            <!-- card one -->
+            <div
+              class="bg-lime-300 bg-lime-opacity-10 rounded-2xl px-8 pt-8 pb-12 m-12"
+            >
+              <!-- <figure class="items-start mb-5"> -->
+              <img src="images/Group1.png" alt="Shoes" class="rounded-xl" />
+              <!-- </figure> -->
+              <div class="">
+                <h2
+                  class="card-title text-custome-dark text-base font-normal text-custom-dark-opacity-40 py-3"
+                >
+                  Phone Number :
+                </h2>
+                <p class="text-custom-dark text-lg font-extrabold">
+                  (+880) 1764-987438
+                </p>
+              </div>
+            </div>
+            <!-- card two -->
+            <div class="bg-amber-opacity-10 rounded-2xl px-8 pt-8 pb-12 m-12">
+              <!-- <figure class="items-start mb-5"> -->
+              <img src="images/Group2.png" alt="Shoes" class="rounded-xl" />
+              <!-- </figure> -->
+              <div class="">
+                <h2
+                  class="card-title text-custome-dark text-base font-normal text-custom-dark-opacity-40 py-3"
+                >
+                  Email :
+                </h2>
+                <p class="text-custom-dark text-lg font-extrabold">
+                  bplbit9@gmail.com
+                </p>
+              </div>
+            </div>
+            <!-- card three -->
+            <div
+              class="bg-blue-400-opacity-10 rounded-2xl px-8 pt-8 pb-12 m-12"
+            >
+              <!-- <figure class="items-start mb-5"> -->
+              <img src="images/Group1.png" alt="Shoes" class="rounded-xl" />
+              <!-- </figure> -->
+              <div class="">
+                <h2
+                  class="card-title text-custome-dark text-base font-normal text-custom-dark-opacity-40 py-3"
+                >
+                  Location :
+                </h2>
+                <p class="text-custom-dark text-lg font-extrabold">
+                  Sector 10, Uttara.
+                </p>
+              </div>
+            </div>
+          </div>
+          <form class="form-section lg:col-span-2">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+                <div>
+                <label for="username" class="text-custom-dark text-xl font-bold"
+                  >Your Name</label
+                ><br />
+                <input
+                  class="input input-lg w-full bg-custom-textarea-03 mt-5"
+                  type="text"
+                  id="username"
+                  placeholder="Enter your full name"
+                />
+              </div>
+              <div>
+                <label for="email" class="text-custom-dark text-xl font-bold"
+                  >Your Email</label
+                ><br />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  class="input input-lg w-full bg-custom-textarea-03 mt-5"
+                />
+              </div>
+              <div>
+                <label for="subject" class="text-custom-dark text-xl font-bold"
+                  >Subject</label
+                ><br />
+                <input
+                  class="input input-lg w-full mt-5 bg-custom-textarea-03"
+                  type="text"
+                  id="subject"
+                  placeholder="Enter your subject"
+                />
+              </div>
+              <div>
+                <label for="phone" class="text-custom-dark text-xl font-bold"
+                  >Phone number</label
+                ><br />
+                <input
+                  class="input input-lg w-full mt-5 bg-custom-textarea-03"
+                  type="text"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+              </div>
+              <div class="">
+                <h3 class="text-custom-dark text-xl font-bold">Message</h3>
+                <textarea
+                  class="textarea rounded-xl col-span-1 lg:col-span-2 w-full mt-5 bg-custom-textarea-03 h-[370px]"
+                  placeholder="Write your message"
+                  name="message"
+                  id="message"
+                  cols="100%"
+                ></textarea>
+              </div>
+              <button
+                type="button"
+                class="btn col-span-1 lg:col-span-2 w-full text-xl font-bold mt-4"
+              >
+                Send Message
+              </button>
+          </form>
         </div>
+      </section>
+      <!-- Social Media -->
+      <section class=" my-24 text-center py-10 bg-custom-textarea-03 rounded-xl">
+        <h3 class=" font-extrabold text-2xl mb-5">Social Media</h3>
+        <ul class="inline-flex gap-6">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-github"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
       </section>
     </main>
     <!-- footer section -->
