@@ -145,7 +145,7 @@
           </div>
         </div>
         <div class="bg-black  p-8 w-auto rounded-xl absolute lg:bottom-20 lg:right-20">
-          <h1 class="text-xl font-extrabold text-white">
+          <h1 class=" text-lg lg:text-xl font-extrabold text-white">
             Meet all the heroes from the field
           </h1>
           <p class="text-white text-sm">
@@ -307,7 +307,7 @@
             </figure>
             <div class="card-body">
               <h2
-                class="card-title lg:pt-[200px] mb-4 text-white text-[28px] font-extrabold"
+                class="card-title lg:pt-[200px] mb-4 text-white lg:text-[28px] font-extrabold"
               >
                 Professional Program
               </h2>
@@ -368,7 +368,7 @@
                 <i class="fas fa-heart bg-white mr-1"> </i>20
                 <i class="fas fa-eye mr-1"> </i>200
               </div>
-              <h3 class="text-xl font-extrabold text-custom-dark">World Cup Flags Football</h3>
+              <h3 class="text-xl font-extrabold text-custom-dark">World Cup Flags</h3>
               <p class="font-medium text-custom-dark-opacity-60">A symbol of identity, unity, and pride for nations worldwide.</p>
               <div>
                 <p><span class="text-red-500
@@ -608,7 +608,7 @@
                 >
                   Phone Number :
                 </h2>
-                <p class="text-custom-dark text-lg font-extrabold">
+                <p class="text-custom-dark lg:text-lg font-extrabold">
                   (+880) 1764-987438
                 </p>
               </div>
@@ -624,7 +624,7 @@
                 >
                   Email :
                 </h2>
-                <p class="text-custom-dark text-lg font-extrabold">
+                <p class="text-custom-dark lg:text-lg font-extrabold">
                   bplbit9@gmail.com
                 </p>
               </div>
@@ -642,7 +642,7 @@
                 >
                   Location :
                 </h2>
-                <p class="text-custom-dark text-lg font-extrabold">
+                <p class="text-custom-dark lg:text-lg font-extrabold">
                   Sector 10, Uttara.
                 </p>
               </div>
@@ -726,49 +726,58 @@
       </section>
     </main>
     <!-- footer section -->
-    <footer
-      class="footer p-10 flex flex-col lg:flex-row text-white bg-custome-backColor"
-    >
-      <div class="flex flex-col lg:w-5/12 text-center lg:text-start">
-        <h1 class="lg:text-[28px] font-extrabold text-center lg:text-start">Get In Touch</h1>
-        <p class="my-4 font-medium text-white-60">"Feel free to get in touch with us for any inquiries, assistance, or information."
-        </p>
-        <div class="felx inline-flex gap-4">
-          <img src="images/email.png" alt="" />
-          <a href="mailto:biplobsarkar9938@gmail.com" class="font-medium text-white-60"
-            >bplbit9@gmail.com</a
-          >
-        </div>
-        <div class="felx inline-flex gap-4">
-          <img src="images/call.png" alt="" />
-          <a href="tel:+880 1764987438" class="font-medium text-white-60"> +880 1764987438</a>
-        </div>
-      </div>
-      <div class=" grid grid-cols-2 lg:grid-cols-3 lg:ml-10 lg:pl-5 w-full">
-        <nav class=" flex flex-col items-center lg:items-start lg:mx-auto text-center lg:text-start">
-          <header class="footer-title text-lg font-bold">Company</header>
-          <a class="link link-hover font-medium text-white-60">About us</a>
-          <a class="link link-hover font-medium text-white-60">Leadership</a>
-          <a class="link link-hover font-medium text-white-60">Careers</a>
-          <a class="link link-hover font-medium text-white-60">News & Article</a>
-          <a class="link link-hover font-medium text-white-60">Legal Notice</a>
-        </nav>
-        <nav class="flex flex-col items-center lg:items-start lg:mx-auto text-center lg:text-start">
-          <header class="footer-title text-lg font-bold">Support</header>
-          <a class="link link-hover font-medium text-white-60">Help Center</a>
-          <a class="link link-hover font-medium text-white-60">FAQ</a>
-          <a class="link link-hover font-medium text-white-60">Ticket Support</a>
-          <a class="link link-hover font-medium text-white-60">Contact Us</a>
-        </nav>
-        <nav class="flex flex-col items-center lg:items-start lg:mx-auto text-center lg:text-start">
-            <header class="footer-title text-lg font-bold">Services</header>
+    <footer class="bg-custom-dark text-white py-10">
+      <div class="container mx-auto px-8 lg:px-2">
+        <div class="grid lg:grid-cols-4 ">
+          <div class="section-one col-span-4 lg:col-span-1 mx-auto  text-center lg:text-start items-center lg:items-start">
+            <div class=" flex flex-col items-center lg:items-start">
+              <h1 class="lg:text-[28px] font-extrabold text-center lg:text-start">Get In Touch</h1>
+              <p class="my-4 font-medium text-white-60">"Feel free to get in touch with us for any inquiries, assistance, or information."
+              </p>
+              <div class="felx inline-flex gap-4">
+                <img src="images/email.png" alt="" />
+                <a href="mailto:biplobsarkar9938@gmail.com" class="font-medium text-white-60"
+                  >bplbit9@gmail.com</a
+                >
+              </div>
+              <div class="felx inline-flex gap-4">
+                <img src="images/call.png" alt="" />
+                <a href="tel:+880 1764987438" class="font-medium text-white-60"> +880 1764987438</a>
+              </div>
+            </div>
+          </div>
+          <div class="section-two col-span-2 lg:col-span-1 text-center lg:text-start">
+            <div class=" flex flex-col">
+              <h3 class=" text-lg font-bold">Company</h3>
+                <a class="link link-hover font-medium text-white-60">About us</a>
+                <a class="link link-hover font-medium text-white-60">Leadership</a>
+                <a class="link link-hover font-medium text-white-60">Careers</a>
+                <a class="link link-hover font-medium text-white-60">News & Article</a>
+                <a class="link link-hover font-medium text-white-60">Legal Notice</a>
+            </div>
+          </div>
+          <div class="section-three col-span-2 lg:col-span-1 text-center lg:text-start">
+            <div class="flex flex-col">
+              <h3 class=" text-lg font-bold">Support</h3>
+                <a class="link link-hover font-medium text-white-60">Help Center</a>
+                <a class="link link-hover font-medium text-white-60">FAQ</a>
+                <a class="link link-hover font-medium text-white-60">Ticket Support</a>
+                <a class="link link-hover font-medium text-white-60">Contact Us</a>
+            </div>
+          </div>
+          <div class="section-four col-span-4 lg:col-span-1 text-center lg:text-start items-center">
+            <div class=" flex flex-col">
+              <h3 class=" text-lg font-bold">Services</h3>
               <a class="link link-hover font-medium text-white-60">Academy</a>
               <a class="link link-hover font-medium text-white-60">Group Lesson</a>
               <a class="link link-hover font-medium text-white-60">Private Lesson</a>
               <a class="link link-hover font-medium text-white-60">Hockeys for kids</a>
               <a class="link link-hover font-medium text-white-60">Hockeys for Adult</a>
-        </nav>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+    
   </body>
 </html>
